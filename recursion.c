@@ -1,12 +1,15 @@
 #include<stdio.h>
-void printhw(int count){
-    if(count==0){
-        return; 
-    }
-    printf("Hello world\n");
-    printhw(count-1);
+int main()
+{
+    int k;
+    k=f(3);
+    printf("%d",k);
 }
-int main(){
-    printhw(5);
-    return 0;
+int f (int n)
+{
+    int s;
+    if (n==1)
+    return 1;
+    s=n+ f (n-1);
+    return(s);
 }
